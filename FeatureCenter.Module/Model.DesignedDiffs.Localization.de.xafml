@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Application Title="Featurezentrale" ProtectedContentText="Geschützter Inhalt" Subtitle="eXpressApp Framework Demo-Anwendung">
+  <ActionDesign>
+    <Actions>
+      <Action Id="Cancel" Caption="Abbrechen" ToolTip="Abbrechen" />
+      <Action Id="ChooseFormattingCulture" Caption="Formatierungskultur auswählen">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="(Default culture)" Caption="(Standardkultur)" />
+          <ChoiceActionItem Id="de" Caption="Deutsch (de)" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="ChooseLanguage" Caption="Sprache auswählen">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="(Default language)" Caption="(Standardsprache)" />
+          <ChoiceActionItem Id="de" Caption="Deutsch (de)" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Delete" Caption="Löschen" ConfirmationMessage="Sind Sie sicher, dass Sie {0} Datensätze löschen wollen?" ToolTip="Löschen" />
+      <Action Id="DialogCancel" Caption="A&amp;bbrechen" />
+      <Action Id="FullTextSearch" Caption="Volltextsuche" />
+      <Action Id="Link" Caption="Verknüpfen" ToolTip="Verknüpfen" />
+      <Action Id="ListViewShowObject" Caption="Öffnen" />
+      <Action Id="NavigateBack" Caption="Zurück" ToolTip="Zurück" />
+      <Action Id="NavigateForward" Caption="Weiter" ToolTip="Weiter" />
+      <Action Id="New" Caption="Neu" ToolTip="Neu" />
+      <Action Id="NextObject" Caption="Nächstes" ToolTip="Nächstes" />
+      <Action Id="PreviousObject" Caption="Vorheriges" ToolTip="Vorheriges" />
+      <Action Id="Refresh" Caption="Aktualisieren" />
+      <Action Id="Save" Caption="Speichern" ToolTip="Speichern" />
+      <Action Id="SaveAndClose" Caption="Speichern und schliessen" ToolTip="Speichern und schliessen" />
+      <Action Id="SaveAndNew" Caption="Speichern und Neu" />
+      <Action Id="SetFilter" Caption="Filter" />
+      <Action Id="ShowAllContexts" Caption="Validieren" ToolTip="Validiert ausgewählte Objekte in allen Kontexten" />
+      <Action Id="Unlink" Caption="Verknüpfung entfernen" ConfirmationMessage="Die Verknüpfungen von {0} Datensätzen werden entfernt. Möchten Sie fortfahren?" ToolTip="Verknüpfung entfernen" />
+    </Actions>
+    <DisableReasons>
+      <Reason Id="ByContext_RequireMultipleObjects" Caption="Mindestens ein Objekt muss ausgewählt sein" />
+      <Reason Id="ByContext_RequireSingleObject" Caption="Ein Objekt muss ausgewählt sein" />
+      <Reason Id="Security" Caption="Zugriff nicht erlaubt" />
+    </DisableReasons>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ContextValidationResult" Caption="Resultat der Validierung">
+      <OwnMembers>
+        <Member Name="BrokenRules" Caption="Gebrochene Regeln" />
+        <Member Name="Context" Caption="Kontext" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Validation.AllContextsView.ValidationResults" Caption="Resultate der Validierung">
+      <OwnMembers>
+        <Member Name="HighlightErrors" Caption="Fehler anzeigen" />
+        <Member Name="Results" Caption="Resultate" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.FileData" Caption="Dateidaten">
+      <OwnMembers>
+        <Member Name="FileName" Caption="Dateiname" />
+        <Member Name="Size" Caption="Grösse" />
+      </OwnMembers>
+    </Class>
+    <Class Name="FeatureCenter.Module.Localization.LocalizationObject" Caption="Lokalisierungsobjekt">
+      <OwnMembers>
+        <Member Name="CurrencyProperty" Caption="Währungseigenschaft" />
+        <Member Name="DateTimeProperty" Caption="Datum/Zeit-Eigenschaft" />
+        <Member Name="DecimalProperty" Caption="Dezimal-Eigenschaft" />
+        <Member Name="EnumerationProperty" Caption="Aufzählungseigenschaft" />
+      </OwnMembers>
+    </Class>
+    <Class Name="FeatureCenter.Module.Validation.MiscellaneousValidationFeaturesObject">
+      <OwnMembers>
+        <Member Name="PropertyWithLocalizedCaption" Caption="Property Name localized in German" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="FeatureCenter.Module.Localization.SimpleEnumeration">
+        <LocalizationItem Name="Fifth" Value="Fünfte" />
+        <LocalizationItem Name="First" Value="Erste" />
+        <LocalizationItem Name="Fourth" Value="Vierte" />
+        <LocalizationItem Name="Second" Value="Zweite" />
+        <LocalizationItem Name="Third" Value="Dreite" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationGroup Name="Validation">
+          <LocalizationItem Name="ActionErrorMessageHeaderFormat" Value="Während der Datenvalidierung wurden Probleme festgestellt. Die untenstehenden Informationen helfen Ihnen, den Sachverhalt zu verstehen und Korrekturen durchzufuhren." />
+          <LocalizationItem Name="AllContextsErrorMessageHeader" Value="Während der Datenvalidierung wurden Probleme festgestellt. Die untenstehenden Informationen helfen Ihnen, den Sachverhalt zu verstehen und Korrekturen durchzufuhren." />
+          <LocalizationItem Name="DeleteErrorMessageHeader" Value="Während der Datenvalidierung wurden Probleme festgestellt. Die untenstehenden Informationen helfen Ihnen, den Sachverhalt zu verstehen und Korrekturen durchzufuhren." />
+          <LocalizationItem Name="SaveErrorMessageHeader" Value="Während der Datenvalidierung wurden Probleme festgestellt. Die untenstehenden Informationen helfen Ihnen, den Sachverhalt zu verstehen und Korrekturen durchzufuhren." />
+          <LocalizationItem Name="ValidationSucceededMessageHeader" Value="Es wurden keine Probleme festgestellt." />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Localization" Caption="Lokalisierung">
+        <Items>
+          <!--<Item Id="Language: de, Formatting: de" Caption="Sprache: de, Formatierung: de" />
+          <Item Id="Language: de, Formatting: User" Caption="Sprache: de, Formatierung: Benutzerdefiniert" />
+          <Item Id="Language: Default, Formatting: de" Caption="Sprache: Standard, Formatierung: de" />-->
+          <Item Id="Language: Default, Formatting: User" Caption="Sprache auswählen im Werkzeug" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

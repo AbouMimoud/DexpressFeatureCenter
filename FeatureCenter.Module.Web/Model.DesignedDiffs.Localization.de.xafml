@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="Edit" Caption="Bearbeiten" />
+      <Action Id="SwitchToEditMode" Caption="Bearbeiten" />
+    </Actions>
+  </ActionDesign>
+</Application>

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Description="">
+  <BOModel>
+    <Class Name="FeatureCenter.Module.PropertyEditors.ReferenceProperties">
+      <OwnMembers>
+        <Member Name="PopupDetailViewObject" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxObjectPropertyEditor" />
+      </OwnMembers>
+    </Class>
+    <Class Name="FeatureCenter.Module.PropertyEditors.StringInSpecialFormatProperties">
+      <OwnMembers>
+        <Member Name="HtmlStringProperty" PropertyEditorType="DevExpress.ExpressApp.HtmlPropertyEditor.Web.ASPxHtmlPropertyEditor" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="UpdatedDemos" Caption="New &amp; Updated Demos" Index="1" IsNewNode="True">
+        <Items>
+          <Item Id="RichTextProperties" ViewId="RichTextProperties_ListView" IsNewNode="True" />
+          <Item Id="ContactForMailMerge" ViewId="ContactForReport_ListView" Caption="Contact For Mail Merge" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Actions">
+        <Items>
+          <Item Id="CustomActionControls" Caption="Custom Action Controls" Index="0" ImageName="BO_Folder" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="CustomizeMenuActionControl" ViewId="CustomizeMenuActionControl_DetailView" IsNewNode="True" />
+              <Item Id="CustomizeInlineGridActionControl" ViewId="CustomizeInlineGridActionControl_ListView" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="Property Editors">
+        <Items>
+          <Item Id="MapProperties_ListView" ViewId="MapsPropertyEditorDemoObject_ListView" Index="12" ObjectKey="" Caption="Map Properties" ImageName="PropertyEditors.Demo_Maps_Properties" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports">
+        <Items>
+          <Item Id="ReportsWithInlineExportActions_ListView" Caption="Reports With Inline Export Actions" ViewId="ReportsWithInlineExportActions_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="ListEditors">
+        <Items>
+          <Item Id="Maps" Caption="Maps" ImageName="BO_Folder" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="MapsListEditor" Caption="Maps List Editor" ViewId="MapsListEditorDemoObject_ListView" ImageName="ListEditors.Demo_ListEditors_Maps" IsNewNode="True" />
+              <Item Id="VectorMapsAreasListEditor" Caption="Vector Maps Areas List Editor" ImageName="ListEditors.Demo_ListEditors_VectorMaps_Area" ViewId="VectorMapsListEditorDemoObject_ListView" IsNewNode="True" />
+              <Item Id="VectorMapsPieMarkersListEditor" Caption="Vector Maps Pie Markers List Editor" ImageName="ListEditors.Demo_ListEditors_VectorMaps_Pie" ViewId="VectorMapsListEditorPieMarker_ListView" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="Grid" Caption="Grid" Index="1">
+            <Items>
+              <Item Id="MasterDetailView" Caption="Master-Detail View" ViewId="MasterObject_ListView" Index="5" ImageName="ListEditors.Demo_ListEditors_Grid_MasterDetail" IsNewNode="True" />
+              <Item Id="BatchEdit" Caption="Batch Edit" ViewId="GridListEditorBatchEditDemoObject_ListView" Index="4" ImageName="ListEditors.Demo_ListEditors_Grid_BatchEdit" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Localization>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationGroup Name="Validation">
+          <LocalizationItem Name="ActionErrorMessageObjectFormat" Value="{0}" />
+          <LocalizationItem Name="DeleteErrorMessageObjectFormat" Value="{0}" />
+          <LocalizationItem Name="SaveErrorMessageObjectFormat" Value="{0}" />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+  </Localization>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="13.1.1.0" IsNewNode="True" />
+    <SchemaModule Name="SystemAspNetModule" Version="13.1.1.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="13.1.6.0" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Messages_DetailView">
+      <Items>
+        <PropertyEditor Id="HowToDoIt" IsNewNode="True" RowCount="29" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="19.323144104803493">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" Index="0">
+            <LayoutGroup Id="Messages" RelativeSize="100" ShowCaption="False">
+              <LayoutGroup Id="Messages_col1" RelativeSize="49.946178686759957">
+                <LayoutItem Id="Message" RelativeSize="35.2112676056338" CaptionLocation="Top" />
+                <LayoutItem Id="Type" RelativeSize="64.788732394366193" CaptionLocation="Top" />
+                <LayoutItem Id="Win.Caption" Removed="True" />
+                <LayoutItem Id="Win.Type" Removed="True" />
+                <LayoutItem Id="Duration" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Messages_col2" RelativeSize="50.053821313240043" Caption="Messages_col2">
+                <LayoutItem Id="Duration" ViewItem="Duration" Index="0" RelativeSize="35.2112676056338" CaptionLocation="Top" IsNewNode="True" />
+                <LayoutItem Id="Web.ToastConfiguration" Removed="True" />
+                <LayoutItem Id="Win.Tag" Removed="True" />
+                <LayoutItem Id="Web.Position" Index="1" RelativeSize="29.577464788732396" CaptionLocation="Top" />
+                <LayoutItem Id="Web.CanCloseOnClick" Index="2" RelativeSize="14.788732394366198" />
+                <LayoutItem Id="Web.CanCloseOnOutsideClick" Index="3" RelativeSize="20.422535211267604" />
+                <LayoutItem Id="Win.ImageOptions" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Index="2">
+            <LayoutItem Id="ActionContainer" RelativeSize="80.67685589519651" CustomCSSClassName="ShowMessageActionContainer"/>
+            <LayoutItem Id="HowToDoIt" RelativeSize="80.67685589519651" CaptionLocation="Top"/>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+
+
+    <!--<DetailView Id="Messages_DetailView">
+      <Items>
+        <StaticText Id="Docs" Text ="&lt;h1&gt; You can learn more on how to setup the &lt;a href=&quot;https://js.devexpress.com/Documentation/16_1/ApiReference/UI_Widgets/dxToast/ &quot; &gt; dxToast &lt;/a&gt; widget in the &lt;a href=&quot;https://js.devexpress.com/Documentation/16_1/ApiReference/UI_Widgets/dxToast/Configuration/ &quot; &gt; dxToast.Configuration &lt;/a&gt; article&lt;/h1&gt;" IsNewNode ="True"/>
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="36.790393013100434">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" >
+            <LayoutGroup Id="Messages" RelativeSize="42.729970326409493" Direction="Vertical">
+              <LayoutGroup Id="Messages_col1" RelativeSize="100">
+                <LayoutItem Id="Message" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="Type" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="Position" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="Duration" RelativeSize="28.571428571428573" />
+              </LayoutGroup>
+              <LayoutGroup Id="Messages_col2" RelativeSize="50.053821313240043" Caption="Toast Configuration" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="Web.ToastConfiguration" Index="1" RelativeSize="58.333333333333336" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            
+              <LayoutItem Id="Docs" ViewItem="Docs" Index="1" RelativeSize="8.90207715133531" IsNewNode="True" />
+              <LayoutItem Id="Web.ToastConfiguration" ViewItem="Web.ToastConfiguration" Index="2" RelativeSize="48.367952522255194" IsNewNode="True" />
+            
+          </LayoutGroup>
+        </LayoutGroup>
+        <LayoutItem Id="ActionContainer" Index="1" RelativeSize="2.8384279475982535" />
+        <LayoutGroup Id="ToastConfigurationGroup" ShowCaption="False" Index="2" RelativeSize="60.37117903930131">
+          <LayoutItem Id="ToastConfiguration" Index="0" RelativeSize="100" />
+          <LayoutItem Id="Docs" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>-->
+
+    <DetailView Id="DetailViewActionsObject_DetailView" ClassName="FeatureCenter.Module.Actions.DetailViewActionsObject">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DetailViewActionsObject">
+              <LayoutItem Id="Name" SizeConstraintsType="Custom" MinSize="250, 10" ViewItem="Name" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CustomizeMenuActionControl_DetailView">
+      <Items>
+        <ActionContainerViewItem Id="CustomizeActionViewItemRecordEdit" ActionContainer="RecordEdit" Caption="CustomizeActionViewItemRecordEdit" IsNewNode="True" />
+        <ActionContainerViewItem Id="CustomizeActionViewItemReports" ActionContainer="Reports" Caption="CustomizeActionViewItemReports" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CustomizeAction" Index="0" RelativeSize="100" Caption="Caption">
+              <LayoutItem Id="Caption" Index="0" Removed="True" />
+              <LayoutItem Id="CustomizeActionViewItemReports" ViewItem="CustomizeActionViewItemReports" Index="1" RelativeSize="95.023328149300156" IsNewNode="True" />
+              <LayoutItem Id="CustomizeActionViewItemRecordEdit" ViewItem="CustomizeActionViewItemRecordEdit" Index="2" RelativeSize="95.023328149300156" IsNewNode="True" />
+
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ItemTemplates_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" ShowCaption="False" Index="0" IsNewNode="True" Removed="True">
+          <LayoutGroup Id="ItemTemplates" ShowCaption="False" Index="0" IsNewNode="True">
+            <LayoutItem Id="LayoutItemTemplate" ViewItem="LayoutItemTemplate" Index="0" IsNewNode="True" />
+            <LayoutItem Id="LayoutGroupTemplate" ViewItem="LayoutGroupTemplate" Index="1" IsNewNode="True" />
+            <LayoutItem Id="TabbedGroupTemplate" ViewItem="TabbedGroupTemplate" Index="2" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="LayoutGroup" ShowCaption="True" CaptionLocation="Top" Caption="Layout Group" Index="1" IsNewNode="True">
+            <LayoutItem Id="Name" ViewItem="Name" Index="0" IsNewNode="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="TabbedGroup" Index="2" IsNewNode="True">
+            <LayoutGroup Id="TabPage1" Caption="Tab Page 1" Index="0" IsNewNode="True">
+              <LayoutItem Id="LayoutItem1" ViewItem="LayoutItem1" Index="0" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="TabPage2" Caption="Tab Page 2" Index="1" IsNewNode="True">
+              <LayoutItem Id="LayoutItem2" ViewItem="LayoutItem2" Index="0" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="RichTextProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="RichTextEditor" Removed="True" />
+        <ColumnInfo Id="RichTextEditorWithBars" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="GridListEditorBatchEditDemoObject_ListView" InlineEditMode="Batch" />
+    <ListView Id="Order_ListView_Chart_Countries" EditorTypeName="DevExpress.ExpressApp.Chart.Web.ASPxChartListEditor" />
+    <ListView Id="Order_ListView_Chart_Employees" EditorTypeName="DevExpress.ExpressApp.Chart.Web.ASPxChartListEditor" />
+    <ListView Id="Order_ListView_Chart_SalesByYears" EditorTypeName="DevExpress.ExpressApp.Chart.Web.ASPxChartListEditor" />
+    <ListView Id="Order_ListView_PivotGrid_SalesAnalysis" EditorTypeName="DevExpress.ExpressApp.PivotGrid.Web.ASPxPivotGridListEditor" />
+    <ListView Id="ReportsWithInlineExportActions_ListView" ClassName="DevExpress.Persistent.BaseImpl.ReportDataV2" Caption="Reports With Inline Export Actions" ImageName="Demo_Report_WithInlinePreviewAction" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="DisplayName" PropertyName="DisplayName" Width="400" SortIndex="0" SortOrder="Ascending" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="DataTypeCaption" PropertyName="DataTypeCaption" Width="70" Index="1" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="MapsListEditorDemoObject_ListView">
+      <Sorting>
+        <SortProperty Id="MapSorting" PropertyName="Title" IsNewNode="True" />
+      </Sorting>
+    </ListView>
+    <ListView Id="VectorMapsListEditorDemoObject_ListView">
+      <VectorMapSettings MaxLatitude="60" MaxLongitude="-63.5" MinLatitude="20" MinLongitude="-133.5" Type="USA">
+        <IntervalItems>
+          <IntervalItem Id="Without_stores" Index="0" Title="No stores" IsNewNode="True" />
+          <IntervalItem Id="1_store" Index="1" Title="1 store" Value="0.9" IsNewNode="True" />
+          <IntervalItem Id="2_stores" Index="2" Title="2 stores" Value="1.9" IsNewNode="True" />
+          <IntervalItem Id="3_stores" Index="3" Title="3 stores" Value="2.9" IsNewNode="True" />
+          <IntervalItem Id="4+_stores" Index="4" Title="4+ stores" Value="100" IsNewNode="True" />
+        </IntervalItems>
+      </VectorMapSettings>
+    </ListView>
+    <ListView Id="VectorMapsListEditorPieMarker_ListView">
+      <VectorMapSettings CenterLongitude="16" CenterLatitude="55.5" MaxLatitude="0" MaxLongitude="0" MinLatitude="0" MinLongitude="0" Type="Europe" ZoomFactor="5.66" LegendType="MarkersColors" DefaultAreaValue="-1" >
+        <IntervalItems>
+          <IntervalItem Id="Category_A" Index="0" Title="Category A" IsNewNode="True" />
+          <IntervalItem Id="Category_B" Index="1" Title="Category B" IsNewNode="True" />
+          <IntervalItem Id="Category_C" Index="2" Title="Category C" IsNewNode="True" />
+        </IntervalItems>
+      </VectorMapSettings>
+      <Sorting>
+        <SortProperty Id="PieMarkersSorting" PropertyName="Title" IsNewNode="True" />
+      </Sorting>
+    </ListView>
+    <DetailView Id="MasterObject_DetailView_MasterDetail" ClassName="FeatureCenter.Module.ListEditors.MasterObject" IsNewNode="True">
+      <Items IsNewNode="True">
+        <PropertyEditor Id="Birthday" PropertyName="Birthday" IsNewNode="True" />
+        <PropertyEditor Id="Email" PropertyName="Email" IsNewNode="True" />
+        <PropertyEditor Id="FirstName" PropertyName="FirstName" IsNewNode="True" />
+        <PropertyEditor Id="HiredDate" PropertyName="HiredDate" IsNewNode="True" />
+        <PropertyEditor Id="LastName" PropertyName="LastName" IsNewNode="True" />
+        <PropertyEditor Id="PhoneNumber" PropertyName="PhoneNumber" IsNewNode="True" />
+        <PropertyEditor Id="Position" PropertyName="Position" IsNewNode="True" />
+        <PropertyEditor Id="DetailObjects" PropertyName="DetailObjects" View="MasterObject_DetailObjects_ListView" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" IsNewNode="True">
+            <LayoutItem Id="HiredDate" ViewItem="HiredDate" Index="0"  IsNewNode="True" />
+            <LayoutItem Id="PhoneNumber" ViewItem="PhoneNumber" Index="1"  IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Item2" ShowCaption="False" Caption="Tasks" CaptionLocation="Top" Index="1"  IsNewNode="True">
+            <LayoutItem Id="DetailObjects" ViewItem="DetailObjects" Index="0"  IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="MasterObject_ListView" DetailRowView="MasterObject_DetailView_MasterDetail" DetailRowMode="DetailView" AllowEdit="False" />
+    <ListView Id="ColorPropertiesObject_ListView">
+      <Columns>
+        <ColumnInfo Id="Color" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxColorPickerPropertyEditor" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ColorPropertiesObject_DetailView">
+      <Items>
+        <PropertyEditor Id="Color" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxColorPickerPropertyEditor" />
+      </Items>
+    </DetailView>
+    <ListView Id="ReferenceProperties_ListView">
+      <Columns>
+        <ColumnInfo Id="GridLookupReferencedObject" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridLookupPropertyEditor" PropertyName="GridLookupReferencedObject" />
+      </Columns>
+    </ListView>
+    <DetailView Id="RichTextProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="RichTextEditor" MenuManagerType="None" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="NamedBaseObject" Index="0" />
+            <LayoutGroup Id="RichTextProperties">
+              <LayoutItem Id="RichTextEditor" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ReferenceProperties_DetailView">
+      <Items>
+        <PropertyEditor Id="GridLookupReferencedObject" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridLookupPropertyEditor" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ReferenceProperties" ShowCaption="False" RelativeSize="45.14038876889849" Direction="Vertical">
+              <LayoutGroup Id="ReferenceProperties_col1" ShowCaption="True" Caption="Grid Lookup" Index="0" RelativeSize="35.4066985645933" IsNewNode="True" Removed="True">
+                <LayoutItem Id="GridLookupReferencedObject" ViewItem="GridLookupReferencedObject" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item3" ShowCaption="True" Caption="Lookup" CaptionLocation="Top" Index="1" RelativeSize="31.578947368421051" IsNewNode="True">
+                <LayoutItem Id="LookupReferencedObject" ViewItem="LookupReferencedObject" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="ReferenceProperties_col2" Direction="Horizontal" Index="1" RelativeSize="35.4796320630749" Removed="True" />
+              <LayoutGroup Id="Item21" ShowCaption="True" Caption="Popup Detail View" CaptionLocation="Top" Index="2" RelativeSize="33.014354066985646" IsNewNode="True">
+                <LayoutItem Id="PopupDetailViewObject" ShowCaption="True" ViewItem="PopupDetailViewObject" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item4" Index="2" RelativeSize="30.097087378640776" Removed="True">
+                <LayoutItem Id="ExpandPropertiesObject.Name" RelativeSize="30.188679245283019" />
+                <LayoutItem Id="ExpandPropertiesObject.Notes" RelativeSize="69.811320754716988" />
+              </LayoutGroup>
+              <LayoutGroup Id="06989ded-3335-4619-9676-c2d4d0b85b36" Caption="06989ded-3335-4619-9676-c2d4d0b85b36(4)" RelativeSize="16.942148760330578" Direction="Horizontal" Removed="True">
+                <LayoutGroup Id="Item2" RelativeSize="100" Index="0" Removed="True">
+                  <LayoutItem Id="PopupDetailViewObject" RelativeSize="100" />
+                </LayoutGroup>
+                <LayoutGroup Id="Item3" RelativeSize="50" Removed="True">
+                  <LayoutItem Id="LookupReferencedObject" RelativeSize="100" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item1" RelativeSize="30.646672914714152" Removed="True">
+                <LayoutItem Id="EmbeddedDetailViewObject" RelativeSize="100" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="NamedBaseObject" RelativeSize="54.85961123110151" Caption="Name">
+              <LayoutGroup Id="Item1" ShowCaption="True" Caption="Embedded Detail View" CaptionLocation="Top" Index="0" RelativeSize="27.165354330708663" IsNewNode="True">
+                <LayoutItem Id="EmbeddedDetailViewObject" ShowCaption="False" ViewItem="EmbeddedDetailViewObject" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item4" ShowCaption="True" Caption="Expand Properties" CaptionLocation="Top" Index="1" RelativeSize="60.236220472440948" IsNewNode="True">
+                <LayoutItem Id="ExpandPropertiesObject.Name" ViewItem="ExpandPropertiesObject.Name" Index="0" RelativeSize="25.196850393700789" IsNewNode="True" />
+                <LayoutItem Id="ExpandPropertiesObject.Notes" ViewItem="ExpandPropertiesObject.Notes" Index="1" RelativeSize="74.803149606299215" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Name" RelativeSize="12.598425196850394" Index="2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ReferencedObject_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Description" PropertyName="Description" Index="1" IsNewNode="True" />
+      </Columns>
+    </ListView>
+  </Views>
+  <Validation>
+    <Rules>
+      <RuleRequiredField Id="GridListEditorBatchEditDemoObject.NameRequired" TargetType="FeatureCenter.Module.ListEditors.GridListEditorBatchEditDemoObject" TargetPropertyName="Name" TargetContextIDs="Save" IsNewNode="True" />
+    </Rules>
+  </Validation>
+</Application>

@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABDFB762-3B14-4B19-82EC-F5BDDB7C42A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FeatureCenter.Module</RootNamespace>
+    <AssemblyName>FeatureCenter.Module</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/FeatureCenter.Module/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>6</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>6</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>lib</ReferencePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Dashboard.v19.1.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Data.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Chart.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Dashboards.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.Kpi.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Notifications.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Office.v19.1">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.StateMachine.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v19.1.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v19.1.Core">
+    <Private>False</Private></Reference>
+    <Reference Include="DevExpress.Utils.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.1.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v19.1">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+    <Private>False</Private></Reference>
+    <Reference Include="System.configuration"><Private>False</Private></Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Private>False</Private></Reference>
+    <Reference Include="System.Data">
+    <Private>False</Private></Reference>
+    <Reference Include="System.Design"><Private>False</Private></Reference>
+    <Reference Include="System.Drawing"><Private>False</Private></Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    <Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ActionBaseController.cs" />
+    <Compile Include="Actions\ActionBaseRootObject.cs" />
+    <Compile Include="Actions\ActionsDemoStrings.cs" />
+    <Compile Include="Actions\ChoosePaintStyleViewController.cs" />
+    <Compile Include="Actions\CustomizeActionObjects.cs" />
+    <Compile Include="Actions\SimpleActionEnabledController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\CustomDetailViewLayoutGenarator.cs" />
+    <Compile Include="Actions\CustomLayoutGenarator.cs">
+    </Compile>
+    <Compile Include="Actions\DetailViewActionsObject.cs">
+    </Compile>
+    <Compile Include="Actions\DetailViewActionsObjectViewCotroller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\DisableControllersForNonPersistentObjects.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\ParametrizedActionConfirmationMessageProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\ParametrizedActionController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\ParametrizedActionRootObject.cs" />
+    <Compile Include="Actions\ParametrizedActionSelectionDependencyProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\ParametrizedActionValueTypeProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\PlaceActionController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\PopupWindowShowActionConfirmationMessageProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\PopupWindowShowActionController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\PopupWindowShowActionRootObject.cs" />
+    <Compile Include="Actions\PopupWindowShowActionSelectionDependencyProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\SimpleActionConfirmationMessageProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\SimpleActionActiveController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\SimpleActionRootObject.cs" />
+    <Compile Include="Actions\SimpleActionSelectionDependencyProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\SingleChoiceActionConfirmationMessageProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\SingleChoiceActionController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\SingleChoiceActionItemHierarchyTypeProperty.cs">
+    </Compile>
+    <Compile Include="Actions\SingleChoiceActionItemTypeProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actions\SingleChoiceActionRootObject.cs" />
+    <Compile Include="Actions\SingleChoiceActionSelectionDependencyProperty.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Audit\ObjectAuditingModesObject.cs" />
+    <Compile Include="Audit\AuditSettingsObject.cs" />
+    <Compile Include="Audit\BaseAuditedObject.cs" />
+    <Compile Include="Audit\CollectionPropertiesAuditedObject.cs" />
+    <Compile Include="Audit\SimplePropertiesAuditedObject.cs" />
+    <Compile Include="AutoCreatableObjectAttribute.cs" />
+    <Compile Include="BaseObjects\CommonClasses.cs" />
+    <Compile Include="BaseObjects\EventBaseObject.cs" />
+    <Compile Include="ConcurrentModifications\ConcurrentModificationsController.cs" />
+    <Compile Include="ConcurrentModifications\Person.cs" />
+    <Compile Include="ConditionalAppearance\ActionControlObject.cs" />
+    <Compile Include="ConditionalAppearance\DisableEnableEditorsObject.cs" />
+    <Compile Include="ConditionalAppearance\FormatAppearanceObject.cs" />
+    <Compile Include="ConditionalAppearance\LayoutItemAppearanceObject.cs" />
+    <Compile Include="ConditionalAppearance\TreeListFormattedObject.cs" />
+    <Compile Include="ConditionalAppearance\HideShowEditorsObject.cs" />
+    <Compile Include="ConditionalAppearance\SelectAllPropertiesObject.cs" />
+    <Compile Include="ConditionalAppearance\SuperpositionOfRulesObject.cs" />
+    <Compile Include="DC\Associations.cs" />
+    <EmbeddedResource Include="DC\DC_Code\Associations.cs" />
+    <EmbeddedResource Include="DC\DC_Code\DomainLogicForMethods.cs" />
+    <EmbeddedResource Include="DC\DC_Code\DomainLogicForProperties.cs" />
+    <EmbeddedResource Include="DC\DC_Code\DomainLogicInheritance.cs" />
+    <EmbeddedResource Include="DC\DC_Code\MultipleInheritance.cs" />
+    <EmbeddedResource Include="DC\DC_Code\PersistentProperties.cs" />
+    <Compile Include="DC\DomainLogicForProperties.cs" />
+    <Compile Include="DC\DomainLogicInheritance.cs" />
+    <Compile Include="DC\ICodeProvider.cs" />
+    <Compile Include="DC\MultipleInheritance.cs" />
+    <Compile Include="DC\PersistentProperties.cs" />
+    <Compile Include="DC\DomainLogicForMethods.cs" />
+    <Compile Include="HintsRepository.cs" />
+    <Compile Include="ListEditors\Bands\BusinessObjects.cs" />
+    <Compile Include="ListEditors\CustomListEditorDemoObject.cs" />
+    <Compile Include="ListEditors\DataAccessModeDemoController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListEditors\DataAccessModeDemoObject.cs" />
+    <Compile Include="ListEditors\MapsListEditorDemoObject.cs" />
+    <Compile Include="ListEditors\MasterDetailDemoObject.cs" />
+    <Compile Include="ListEditors\VectorMapsListEditorDemoObject.cs" />
+    <Compile Include="LongOperation.cs" />
+    <Compile Include="Messages\Messages.cs" />
+    <Compile Include="Messages\ShowMessagesController.cs" />
+    <Compile Include="NonPersistentObjects\Controllers.cs" />
+    <Compile Include="NonPersistentObjects\NonPersistentObjects.cs" />
+    <Compile Include="Northwind\NorthwindClasses.cs" />
+    <Compile Include="CustomFields\CustomFieldsObject.cs" />
+    <Compile Include="Notifications\FeatureCenterNotificationsController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Notifications\SchedulerNotifications.cs" />
+    <Compile Include="Performance\CustomEmployee.cs" />
+    <Compile Include="Performance\DelayedDetailViewDataLoadingController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\ColorPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\CustomFormattedPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\CustomPropertyEditorsObject.cs" />
+    <Compile Include="PropertyEditors\FeatureCenterEditorAliases.cs" />
+    <Compile Include="Filtering\FilterByTextOptionsObject.cs" />
+    <Compile Include="Filtering\FilterByTextObject.cs" />
+    <Compile Include="BaseObjects\GridBaseObject.cs" />
+    <Compile Include="KeyProperty\GuidKeyPropertyObject.cs" />
+    <Compile Include="KeyProperty\IntegerKeyPropertyObject.cs" />
+    <Compile Include="KeyProperty\NoKeyPropertyNamedBaseObject.cs" />
+    <Compile Include="KeyProperty\StringKeyPropertyObject.cs" />
+    <Compile Include="Layout\DefaultFocusItem.cs" />
+    <Compile Include="ListEditors\GridListEditorDemoObject.cs" />
+    <Compile Include="ListEditors\SchedulerListEditorDemoObject.cs" />
+    <Compile Include="ListEditors\TreeListEditorDemoObject.cs" />
+    <Compile Include="Localization\ChangeLanguageController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Localization\LocalizationObject.cs" />
+    <Compile Include="LongOperationController.cs" />
+    <Compile Include="Navigation\NavigationDemoController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Navigation\NavigationDemoStrings.cs" />
+    <Compile Include="Navigation\NavigationObject.cs" />
+    <Compile Include="PropertyEditors\CriteriaPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\MapsPropertyEditorDemoObject.cs" />
+    <Compile Include="PropertyEditors\RichEditPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\StringInSpecialFormatPropertiesObject.cs" />
+    <Compile Include="Reports\Contact.cs" />
+    <Compile Include="Reports\ContactReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ContactReport.Designer.cs">
+      <DependentUpon>ContactReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ContactReportLayout.cs" />
+    <Compile Include="Reports\PhoneNumber.cs" />
+    <Compile Include="Reports\PhoneNumberReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PhoneNumberReport.Designer.cs">
+      <DependentUpon>PhoneNumberReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Position.cs" />
+    <Compile Include="ShowHintController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skins\SkinDemoObject.cs" />
+    <Compile Include="BaseObjects\TreeListBaseObject.cs" />
+    <Compile Include="Skins\SkinsWindowControllerBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StateMachine\Employee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StateMachine\PaymentTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StateMachine\Status.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StateMachine\Task.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StateMachine\TaskStatusStateMachine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validation\CodeRuleObject.cs" />
+    <Compile Include="HintAttribute.cs" />
+    <Compile Include="Hints.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseObjects\NamedBaseObject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringCompressionConverter.cs" />
+    <Compile Include="Updater.cs" />
+    <Compile Include="PropertyEditors\BooleanPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\CollectionPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\FileAttachmentPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\DateTimePropertiesObject.cs" />
+    <Compile Include="PropertyEditors\StructPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\ReferencePropertiesObject.cs" />
+    <Compile Include="PropertyEditors\ImagePropertiesObject.cs" />
+    <Compile Include="PropertyEditors\StringPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\EnumPropertiesObject.cs" />
+    <Compile Include="PropertyEditors\NumericPropertiesObject.cs" />
+    <Compile Include="Validation\ComplexValidationSettingsObject.cs" />
+    <Compile Include="Validation\CustomRuleObject.cs" />
+    <Compile Include="Validation\ErrorMessageTemplatesObject.cs" />
+    <Compile Include="Validation\InplaceValidationObject.cs" />
+    <Compile Include="Validation\MiscellaneousValidationFeatures.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Validation\RuleCombinationOfPropertiesIsUniqueObject.cs" />
+    <Compile Include="Validation\RuleCriteriaObject.cs" />
+    <Compile Include="Validation\ValidationErrorsAndWarningsFeatureObject.cs" />
+    <Compile Include="Validation\RuleFromBoolPropertyObject.cs" />
+    <Compile Include="Validation\RuleIsReferencedObject.cs" />
+    <Compile Include="Validation\RuleObjectExistsObject.cs" />
+    <Compile Include="Validation\RuleRangeObject.cs" />
+    <Compile Include="Validation\RuleRegularExpressionObject.cs" />
+    <Compile Include="Validation\RuleRequiredFieldObject.cs" />
+    <Compile Include="Validation\RuleStringComparisonObject.cs" />
+    <Compile Include="Validation\RuleUniqueValueObject.cs" />
+    <Compile Include="Validation\RuleValueComparisonObject.cs" />
+    <Compile Include="Validation\SimpleValidationSettingsObject.cs" />
+    <Compile Include="Validation\ValidationDemoBaseObject.cs" />
+    <Compile Include="ViewVariants\ViewVariantsObject.cs" />
+    <Compile Include="WelcomeObject.cs" />
+    <Compile Include="XpoDataStoreProvider.cs" />
+    <Compile Include="XpoDataStoreProxy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ContactReport.resx">
+      <DependentUpon>ContactReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PhoneNumberReport.resx">
+      <DependentUpon>PhoneNumberReport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\BooleanPropertiesObject_BooleanWithImages_False.png" />
+    <EmbeddedResource Include="Images\BooleanPropertiesObject_BooleanWithImages_True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PropertyEditors\Resources\Image1.png" />
+    <EmbeddedResource Include="PropertyEditors\Resources\Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PropertyEditors\Resources\LargeImage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.de.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PropertyEditors\Resources\FileAttachment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomImages\CustomImages.csproj">
+      <Project>{3A6E6CD4-7CFB-42E7-A955-5507E94588F7}</Project>
+      <Name>CustomImages</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PropertyEditors\Resources\EmptyFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ImageLibrary\Demo_Image_Library_Custom.png" />
+    <EmbeddedResource Include="Images\ImageLibrary\Demo_Image_Library_Custom_32x32.png" />
+    <EmbeddedResource Include="Images\ImageLibrary\Demo_Image_Library_Standard.png" />
+    <EmbeddedResource Include="Images\ImageLibrary\Demo_Image_Library_Standard_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PropertyEditors\Resources\Document.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Validation\Demo_Code_Rule.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Code_Rule_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Complex_Validation_Settings.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Complex_Validation_Settings_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Custom_Rule.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Custom_Rule_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Miscellaneous_Validation_Features.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Miscellaneous_Validation_Features_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Criteria.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Criteria_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_From_Bool_Property.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_From_Bool_Property_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_IsReferenced.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_IsReferenced_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Object_Exists.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Object_Exists_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Range.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Range_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Regular_Expression.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Regular_Expression_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Required_Field.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Required_Field_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_String_Comparison.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_String_Comparison_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Unique_Value.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Unique_Value_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Value_Comparison.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Value_Comparison_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Simple_Validation_Settings.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Simple_Validation_Settings_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Validation_Message_Templates.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Validation_Message_Templates_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Filtering\Demo_Search_FilterByText.png" />
+    <EmbeddedResource Include="Images\Filtering\Demo_Search_FilterByText_32x32.png" />
+    <EmbeddedResource Include="Images\Filtering\Demo_Search_FilterByText_Settings.png" />
+    <EmbeddedResource Include="Images\Filtering\Demo_Search_FilterByText_Settings_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\KeyProperties\Demo_KeyProperty_Guid.png" />
+    <EmbeddedResource Include="Images\KeyProperties\Demo_KeyProperty_Guid_32x32.png" />
+    <EmbeddedResource Include="Images\KeyProperties\Demo_KeyProperty_Integer.png" />
+    <EmbeddedResource Include="Images\KeyProperties\Demo_KeyProperty_Integer_32x32.png" />
+    <EmbeddedResource Include="Images\KeyProperties\Demo_KeyProperty_String.png" />
+    <EmbeddedResource Include="Images\KeyProperties\Demo_KeyProperty_String_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Localization\Demo_Localization_Def_de.png" />
+    <EmbeddedResource Include="Images\Localization\Demo_Localization_Def_de_32x32.png" />
+    <EmbeddedResource Include="Images\Localization\Demo_Localization_Def_User.png" />
+    <EmbeddedResource Include="Images\Localization\Demo_Localization_Def_User_32x32.png" />
+    <EmbeddedResource Include="Images\Localization\Demo_Localization_de_de.png" />
+    <EmbeddedResource Include="Images\Localization\Demo_Localization_de_de_32x32.png" />
+    <EmbeddedResource Include="Images\Localization\Demo_Localization_de_User.png" />
+    <EmbeddedResource Include="Images\Localization\Demo_Localization_de_User_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Boolean_Properties.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Boolean_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Collection_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Collection_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Criteria_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Criteria_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Custom_Property_Editors.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Custom_Property_Editors_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_DateTime_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_DateTime_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Enum_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Enum_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Image_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Image_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Numeric_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Numeric_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Reference_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Reference_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_String_InSpecialFormat_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_String_InSpecialFormat_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_String_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_String_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Struct_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Struct_Properties_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_Layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_Layout_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Scheduler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Scheduler_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_TreeList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_TreeList_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Combination_Of_Properties_Is_Unique.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Rule_Combination_Of_Properties_Is_Unique_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_AutoFilterRow.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_AutoFilterRow_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_Filter.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_Filter_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_LargeData.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_LargeData_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Scheduler_Filter.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Scheduler_Filter_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Scheduler_LargeData.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Scheduler_LargeData_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_TreeList_Filter.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_TreeList_Filter_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_TreeList_LargeData.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_TreeList_LargeData_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_TreeList_NodeImages.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_TreeList_NodeImages_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ConditionalAppearance\ConditionalAppearance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Audit\Demo_Audit_Performance.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Audit_Performance_32x32.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Audit_Settings.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Audit_Settings_32x32.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Collection_Properties_Audit.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Collection_Properties_Audit_32x32.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Import_Data_With_Partial_Audit.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Import_Data_With_Partial_Audit_32x32.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Simple_Properties_Audit.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Simple_Properties_Audit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Demo_Welcome.png" />
+    <EmbeddedResource Include="Images\Demo_Welcome_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Audit\Demo_Audit_Modes.png" />
+    <EmbeddedResource Include="Images\Audit\Demo_Audit_Modes_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Layout\Demo_Layout_DefaultFocusedItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Custom_DressedToKill.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Custom_EternallyYours.png" />
+    <EmbeddedResource Include="Images\NoImage.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Custom_TheLastTimeISawParis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Custom.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Custom_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Chart_Bar.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Chart_Bar_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Chart_Line.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Chart_Line_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Chart_Pie.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Chart_Pie_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_PivotGrid.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_PivotGrid_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Dashboard\Demo_Dashboard.png" />
+    <EmbeddedResource Include="Images\Dashboard\Demo_Dashboard_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Dashboard\Demo_Dashboard_AdvancedDashboard.png" />
+    <EmbeddedResource Include="Images\Dashboard\Demo_Dashboard_AdvancedDashboard_32x32.png" />
+    <EmbeddedResource Include="Images\Dashboard\Demo_Dashboard_SwitchViaViewVariants.png" />
+    <EmbeddedResource Include="Images\Dashboard\Demo_Dashboard_SwitchViaViewVariants_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\DC\Associations.png" />
+    <EmbeddedResource Include="Images\DC\DomainLogicForMethods.png" />
+    <EmbeddedResource Include="Images\DC\DomainLogicForProperties.png" />
+    <EmbeddedResource Include="Images\DC\DomainLogicInheritance.png" />
+    <EmbeddedResource Include="Images\DC\MultipleInheritance.png" />
+    <EmbeddedResource Include="Images\DC\PersistentProperties.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Validation\Demo_Soft_Validation.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Soft_Validation_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ConcurrentModifications\Demo_ConcurrentModifications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\CustomFields\Demo_CustomFields.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Notifications\Sheduler_with_notifications.png" />
+    <EmbeddedResource Include="Images\Notifications\Task_with_notifications.png" />
+    <EmbeddedResource Include="Images\Delayed_DetailView_Data_Loading.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Maps_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Maps_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Maps.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Maps_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_VectorMaps_Area.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_VectorMaps_Area_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_VectorMaps_Pie.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_VectorMaps_Pie_32x32.png" />
+    <EmbeddedResource Include="Images\Maps\Show_Routes.png" />
+    <EmbeddedResource Include="Images\Maps\Show_Routes_32x32.png" />
+    <EmbeddedResource Include="Images\Maps\Change_Provider.png" />
+    <EmbeddedResource Include="Images\Maps\Change_Provider_32x32.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Client_Side_Validation.png" />
+    <EmbeddedResource Include="Images\Validation\Demo_Client_Side_Validation_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_BatchEdit.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_BatchEdit_32x32.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_MasterDetail.png" />
+    <EmbeddedResource Include="Images\ListEditors\Demo_ListEditors_Grid_MasterDetail_32x32.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\New_non-persistent_object.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\New_non-persistent_object_32x32.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\Non-persistent_object.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\Non-persistent_objects_collection.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\Non-persistent_objects_collection_32x32.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\Non-persistent_object_32x32.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\Non-persistent_object_by_key.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\Non-persistent_object_by_key_32x32.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\Non-persistent_object_with_non-persistent_collection.png" />
+    <EmbeddedResource Include="Images\NonPersistentObjects\Non-persistent_object_with_non-persistent_collection_32x32.png" />
+    <EmbeddedResource Include="Images\InstantFeedback\InstantFeedback_16x16.png" />
+    <EmbeddedResource Include="Images\InstantFeedback\InstantFeedback_32x32.png" />
+    <EmbeddedResource Include="Dashboards\SalesOverview.xml" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Color_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Color_Properties_32x32.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_RichText_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_RichText_Properties_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Spreadsheet_Properties.png" />
+    <EmbeddedResource Include="Images\PropertyEditors\Demo_Spreadsheet_Properties_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\DemoDocument.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Template.docx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

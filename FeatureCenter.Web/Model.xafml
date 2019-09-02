@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChooseFormattingCulture" IsPostBackRequired="True" />
+      <Action Id="ChooseLanguage" IsPostBackRequired="True" />
+    </Actions>
+  </ActionDesign>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerAspNetModule" Version="16.2.0.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="16.2.0.0" IsNewNode="True" />
+    <SchemaModule Name="SystemAspNetModule" Version="16.2.0.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="16.2.0.0" IsNewNode="True" />
+  </SchemaModules>
+  <NavigationItems>
+    <Items>
+      <Item Id="UpdatedDemos">
+        <Items>
+          <Item Id="MailMergeTemplates" ViewId="RichTextMailMergeData_ListView" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

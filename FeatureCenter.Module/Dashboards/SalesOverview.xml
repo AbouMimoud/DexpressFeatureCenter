@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-US">
+  <Title Text="Sales Overview" />
+  <DataSources>
+    <ObjectDataSource ComponentName="dashboardObjectDataSource1">
+      <Name>Order</Name>
+      <DataSource Type="FeatureCenter.Module.Northwind.Order, FeatureCenter.Module, Version=1.0.6158.19002, Culture=neutral, PublicKeyToken=null" />
+      <CalculatedFields>
+        <CalculatedField Name="Revenue1994" Expression="Iif(GetYear([OrderDate]) = 1994, [Freight], 0)" DataType="Auto" />
+        <CalculatedField Name="Revenue1995" Expression="Iif(GetYear([OrderDate]) = 1995, [Freight], 0)" DataType="Auto" />
+        <CalculatedField Name="Revenue1996" Expression="Iif(GetYear([OrderDate]) = 1996, [Freight], 0)" DataType="Auto" />
+      </CalculatedFields>
+    </ObjectDataSource>
+  </DataSources>
+  <Items>
+    <Pie ComponentName="pieDashboardItem1" Name="Revenue by Employee" ShowCaption="false" DataSource="dashboardObjectDataSource1">
+      <DataItems>
+        <Measure DataMember="Freight" Name="Revenue by Employee" DefaultId="DataItem0" />
+        <Dimension DataMember="Employee.FullName" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Values>
+        <Value DefaultId="DataItem0" />
+      </Values>
+    </Pie>
+    <Chart ComponentName="chartDashboardItem1" Name="Revenue" DataSource="dashboardObjectDataSource1" FilterString="[DataItem1] Is Not Null">
+      <DataItems>
+        <Measure DataMember="Freight" Name="Revenue" DefaultId="DataItem0" />
+        <Dimension DataMember="ShippedDate" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend Visible="false" />
+    </Chart>
+    <ChoroplethMap ComponentName="choroplethMapDashboardItem1" Name="Sales by Country" DataSource="dashboardObjectDataSource1" ShapeTitleAttributeName="NAME" AttributeName="NAME">
+      <InteractivityOptions MasterFilterMode="Multiple" />
+      <DataItems>
+        <Dimension DataMember="Customer.Country" DefaultId="DataItem0" />
+        <Measure DataMember="Freight" Name="Amount" DefaultId="DataItem1" />
+        <Measure DataMember="Customer.City" Name="City сount" SummaryType="CountDistinct" DefaultId="DataItem2" />
+      </DataItems>
+      <ViewArea TopLatitude="85.051128779806589" BottomLatitude="-71.5426526901998" LeftLongitude="-150.59121906104357" RightLongitude="98.522848499599263" CenterPointLatitude="38.345712365976986" CenterPointLongitude="-26.034185280722173" CreateViewerPaddings="false" />
+      <MapLegend Visible="true" Position="BottomCenter" Orientation="Horizontal" />
+      <WeightedLegend />
+      <TooltipMeasures>
+        <TooltipMeasure DefaultId="DataItem2" />
+      </TooltipMeasures>
+      <AttributeDimension DefaultId="DataItem0" />
+      <Maps>
+        <ValueMap>
+          <Value DefaultId="DataItem1" />
+          <UniformScale />
+        </ValueMap>
+      </Maps>
+    </ChoroplethMap>
+    <Grid ComponentName="gridDashboardItem1" Name="Sales by Company" DataSource="dashboardObjectDataSource1">
+      <DataItems>
+        <Measure DataMember="Freight" Name="Trend" DefaultId="DataItem3" />
+        <Dimension DataMember="OrderDate" SortOrder="Descending" DateTimeGroupInterval="MonthYear" DefaultId="DataItem4" />
+        <Dimension DataMember="Customer.CompanyName" DefaultId="DataItem0" />
+        <Dimension DataMember="Customer.City" Name="City" DefaultId="DataItem1" />
+        <Measure DataMember="Freight" Name="Amount" DefaultId="DataItem2" />
+      </DataItems>
+      <FormatRules>
+        <GridItemFormatRule Name="FormatRule 1" DataItem="DataItem2">
+          <FormatConditionBar>
+            <NegativeStyleSettings PredefinedColor="PaleRed" />
+            <StyleSettings PredefinedColor="PaleGreen" />
+            <BarOptions />
+          </FormatConditionBar>
+        </GridItemFormatRule>
+      </FormatRules>
+      <GridColumns>
+        <GridSparklineColumn Weight="94.5260347129506">
+          <SparklineValue DefaultId="DataItem3" />
+        </GridSparklineColumn>
+        <GridDimensionColumn Weight="91.7222963951936">
+          <Dimension DefaultId="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Weight="59.679572763684916">
+          <Dimension DefaultId="DataItem1" />
+        </GridDimensionColumn>
+        <GridMeasureColumn Weight="54.0720961281709">
+          <Measure DefaultId="DataItem2" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <SparklineArgument DefaultId="DataItem4" />
+      <GridOptions ColumnWidthMode="Manual" />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="choroplethMapDashboardItem1" Weight="58.237288135593218" />
+      <LayoutGroup Orientation="Vertical" Weight="41.762711864406782">
+        <LayoutItem DashboardItem="chartDashboardItem1" Weight="38.023630504833513" />
+        <LayoutItem DashboardItem="gridDashboardItem1" Weight="28.678839957035446" />
+        <LayoutItem DashboardItem="pieDashboardItem1" Weight="33.297529538131045" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
