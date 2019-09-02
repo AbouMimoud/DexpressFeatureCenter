@@ -258,7 +258,7 @@
     <Compile Include="AutoCreatableObjectAttribute.cs" />
     <Compile Include="BaseObjects\CommonClasses.cs" />
     <Compile Include="BaseObjects\EventBaseObject.cs" />
-    <Compile Include="Client.cs" />
+    <Compile Include="BusinessObjects\Client.cs" />
     <Compile Include="ConcurrentModifications\ConcurrentModificationsController.cs" />
     <Compile Include="ConcurrentModifications\Person.cs" />
     <Compile Include="ConditionalAppearance\ActionControlObject.cs" />
@@ -765,9 +765,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\Template.docx" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BusinessObjects\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
